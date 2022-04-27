@@ -20,6 +20,7 @@ public class ShellSort {
                     for( ; reversePosition >= interval && unsortedArray[ reversePosition - interval ] > placeholder; reversePosition -= interval ) {
                         unsortedArray[ reversePosition ] = unsortedArray[ reversePosition - interval ];
                     }
+                    unsortedArray[ reversePosition ] = placeholder;
                 }
             }
             interval /= 2;
