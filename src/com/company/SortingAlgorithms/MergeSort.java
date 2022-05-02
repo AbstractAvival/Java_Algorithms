@@ -27,8 +27,8 @@ public class MergeSort {
         int [] firstArray = new int[ firstArraySize ];
         int [] secondArray = new int[ secondArraySize ];
 
-        CopyArray( unsortedArray, firstArray, initialIndex );
-        CopyArray( unsortedArray, secondArray, middleIndex + 1 );
+        System.arraycopy( unsortedArray, initialIndex, firstArray, 0, firstArraySize );
+        System.arraycopy( unsortedArray, middleIndex + 1, secondArray, 0, secondArraySize );
 
         int firstArrayIndex = 0;
         int secondArrayIndex = 0;
@@ -56,12 +56,6 @@ public class MergeSort {
             unsortedArray[ mergedArrayIndex ] = secondArray[ secondArrayIndex ];
             secondArrayIndex++;
             mergedArrayIndex++;
-        }
-    }
-
-    private void CopyArray( int [] originalArray, int [] targetArray, int initialIndex ) {
-        for( int index = 0; index < targetArray.length; index++ ) {
-            targetArray[ index ] = originalArray[ initialIndex + index ];
         }
     }
 }
