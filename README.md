@@ -1,6 +1,6 @@
 # Java_Algorithms
 
-Algorithm implementations using Java programming language. I am currently reviewing algorithms on my free time and figured I could
+Algorithm implementations using the Java programming language. I am currently reviewing algorithms on my free time and figured I could
 use them as exercises and practice. I will add algorithm implementations when I can. 
 
 
@@ -14,3 +14,4 @@ Algorithms that are used to rearrange a given array or list elements according t
 | ---- | ------------- |
 | Selection Sort | [Java_Algorithms/SortingAlgorithms/SelectionSort](https://github.com/AbstractAvival/Java_Algorithms/blob/master/src/com/company/SortingAlgorithms/SelectionSort.java) |
 | Insertion Sort | [Java_Algorithms/SortingAlgorithms/InsertionSort](https://github.com/AbstractAvival/Java_Algorithms/blob/master/src/com/company/SortingAlgorithms/InsertionSort.java) |
+| Shell Sort | [Java_Algorithms/SortingAlgorithms/ShellSort](https://github.com/AbstractAvival/Java_Algorithms/blob/master/src/com/company/SortingAlgorithms/ShellSort.java) |
