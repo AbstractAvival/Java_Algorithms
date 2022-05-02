@@ -21,6 +21,47 @@ public class MergeSort {
     }
 
     private void Merge( int [] unsortedArray, int initialIndex, int middleIndex, int finalIndex ) {
+        final int firstArraySize = middleIndex - initialIndex + 1;
+        final int secondArraySize = finalIndex - middleIndex;
 
+        int [] firstArray = new int[ firstArraySize ];
+        int [] secondArray = new int[ secondArraySize ];
+
+        CopyArray( unsortedArray, firstArray, initialIndex );
+        CopyArray( unsortedArray, secondArray, middleIndex + 1 );
+
+        int firstArrayIndex = 0;
+        int secondArrayIndex = 0;
+        int mergedArrayIndex = initialIndex;
+
+        while( firstArrayIndex < firstArraySize && secondArrayIndex < secondArraySize ) {
+            if( firstArray[ firstArrayIndex ] < secondArray[ secondArrayIndex ] ) {
+                unsortedArray[ mergedArrayIndex ] = firstArray[ firstArrayIndex ];
+                firstArrayIndex++;
+            }
+            else {
+                unsortedArray[ mergedArrayIndex ] = secondArray[ secondArrayIndex ];
+                secondArrayIndex++;
+            }
+            mergedArrayIndex++;
+        }
+
+        while( firstArrayIndex < firstArraySize ) {
+            unsortedArray[ mergedArrayIndex ] = firstArray[ firstArrayIndex ];
+            firstArrayIndex++;
+            mergedArrayIndex++;
+        }
+
+        while( secondArrayIndex < secondArraySize ) {
+            unsortedArray[ mergedArrayIndex ] = secondArray[ secondArrayIndex ];
+            secondArrayIndex++;
+            mergedArrayIndex++;
+        }
+    }
+
+    private void CopyArray( int [] originalArray, int [] targetArray, int initialIndex ) {
+        for( int index = 0; index < targetArray.length; index++ ) {
+            targetArray[ index ] = originalArray[ initialIndex + index ];
+        }
     }
 }
