@@ -1,3 +1,11 @@
+/*
+ * Quick Sort:
+ *
+ * A divide and conquer algorithm. It picks an element as
+ * a pivot point and partitions the given array around said
+ * pivot into sub-arrays. The sub-arrays are then sorted
+ * recursively.
+ * */
 package com.company.SortingAlgorithms;
 
 public class QuickSort {
