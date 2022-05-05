@@ -11,6 +11,24 @@ public class QuickSort {
     }
 
     private int Partition( int [] unsortedArray, int startIndex, int endIndex ) {
-        return 0;
+        int pivotValue = unsortedArray[ endIndex ];
+        int currentPivotIndex = startIndex - 1;
+
+        for( int currentIndex = 0; currentIndex < endIndex; currentIndex++ ) {
+            if( unsortedArray[ currentIndex ] < pivotValue ) {
+                currentPivotIndex++;
+                Swap( unsortedArray, currentIndex, currentPivotIndex );
+            }
+        }
+
+        currentPivotIndex++;
+        Swap( unsortedArray, currentPivotIndex, endIndex );
+        return currentPivotIndex;
+    }
+
+    private void Swap( int [] targetArray, int firstTargetIndex, int secondTargetIndex ) {
+        int placeholder = targetArray[ firstTargetIndex ];
+        targetArray[ firstTargetIndex ] = targetArray[ secondTargetIndex ];
+        targetArray[ secondTargetIndex ] = placeholder;
     }
 }
