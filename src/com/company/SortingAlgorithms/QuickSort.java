@@ -14,7 +14,7 @@ public class QuickSort {
         int pivotValue = unsortedArray[ endIndex ];
         int currentPivotIndex = startIndex - 1;
 
-        for( int currentIndex = 0; currentIndex < endIndex; currentIndex++ ) {
+        for( int currentIndex = startIndex; currentIndex < endIndex; currentIndex++ ) {
             if( unsortedArray[ currentIndex ] < pivotValue ) {
                 currentPivotIndex++;
                 Swap( unsortedArray, currentIndex, currentPivotIndex );
