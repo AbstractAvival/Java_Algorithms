@@ -16,3 +16,4 @@ Algorithms that are used to rearrange a given array or list elements according t
 | Insertion Sort | [Java_Algorithms/SortingAlgorithms/InsertionSort](https://github.com/AbstractAvival/Java_Algorithms/blob/master/src/com/company/SortingAlgorithms/InsertionSort.java) |
 | Shell Sort | [Java_Algorithms/SortingAlgorithms/ShellSort](https://github.com/AbstractAvival/Java_Algorithms/blob/master/src/com/company/SortingAlgorithms/ShellSort.java) |
 | Merge Sort | [Java_Algorithms/SortingAlgorithms/MergeSort](https://github.com/AbstractAvival/Java_Algorithms/blob/master/src/com/company/SortingAlgorithms/MergeSort.java) |
+| Quick Sort | [Java_Algorithms/SortingAlgorithms/QuickSort](https://github.com/AbstractAvival/Java_Algorithms/blob/master/src/com/company/SortingAlgorithms/QuickSort.java) |
